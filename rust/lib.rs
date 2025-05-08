@@ -6,6 +6,6 @@ use proc_macro::TokenStream;
 
 #[proc_macro_attribute]
 pub fn fam(_input: TokenStream, _attrs: TokenStream) -> TokenStream {
-    let stream = TokenStream::from_str("#[no_std]");
+    let stream = TokenStream::from_str("#![no_std]");
     stream.expect("parse token stream")
 }

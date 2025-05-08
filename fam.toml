@@ -1,0 +1,3 @@
+[crate]
+	proc-macro = "proc_macros"
+[deps]
